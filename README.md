@@ -1,94 +1,60 @@
+🌍 Wikipedia API Data Project
+This repository contains tools and scripts for extracting, analyzing, and visualizing data from Wikipedia using Python. The focus is on population data and billionaire statistics scraped or retrieved via Wikipedia APIs or direct HTML parsing.
 
-# 🌐 Wikipedia API Data Extractor
+📁 Project Structure
+File / Folder	Description
+countries_population.csv	Cleaned CSV of country population data extracted from Wikipedia
+index.html	HTML snapshot or scraped source of the Wikipedia population page
+wiki_billionaire_api_EDA.ipynb	Jupyter Notebook exploring billionaire data using Wikipedia API
+README.md	This project documentation
+.gitignore	Git ignore file to exclude unnecessary files
+🧠 Project Highlights
+✅ API + Web Scraping from Wikipedia
 
-This repository contains Python scripts that extract structured data from the [Wikipedia page on countries and dependencies by population](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population) using the `wikipedia-api` and `pandas` libraries. The data is cleaned, transformed, and saved for further analysis or integration into data pipelines.
+📊 Exploratory Data Analysis (EDA) on global population and billionaire lists
 
----
+📥 Data Saved in clean, shareable CSV format
 
-## 📁 Project Structure
+🧹 Built-in data cleaning and parsing logic
 
-```
-📦 wikipedia-api-data
-├── data/
-│   └── countries_population.csv
-├── src/
-│   └── extract_population.py
-├── README.md
-└── requirements.txt
-```
+📈 Visualization-ready outputs for Kaggle or data storytelling
 
----
+📦 Requirements
+Python 3.8+
 
-## 🚀 Features
+pandas
 
-- Extracts population tables from Wikipedia using BeautifulSoup or Wikipedia API
-- Parses and tags data by year if applicable
-- Converts HTML tables into clean CSV format
-- Handles edge cases in HTML structure gracefully
+wikipedia-api or requests + BeautifulSoup
 
----
+jupyter (for .ipynb notebook)
 
-## 🧰 Technologies Used
+Install dependencies:
 
-- Python 3.x  
-- `pandas`  
-- `requests`  
-- `wikipedia-api` or `BeautifulSoup`  
-- `json`  
-
----
-
-## 📦 Installation
-
-Clone the repository and install dependencies:
-
-```bash
-git clone https://github.com/yourusername/wikipedia-api-data.git
-cd wikipedia-api-data
+bash
+Copy
+Edit
 pip install -r requirements.txt
-```
-
----
-
-## 🧪 Usage
-
-Run the extraction script:
-
-```bash
+🚀 Usage
+Extract & Save Population Data
+bash
+Copy
+Edit
 python src/extract_population.py
-```
+Run EDA Notebook
+Open wiki_billionaire_api_EDA.ipynb in Jupyter to explore insights.
 
-This will generate a CSV file (e.g., `countries_population.csv`) in the `data/` folder.
+📚 Data Sources
+Wikipedia: List of countries and dependencies by population
 
----
+Wikipedia API documentation
 
-## 📊 Sample Output
+📌 Notes
+Dataset is intended for educational and exploratory use.
 
-A sample of the output CSV file looks like this:
+May require refreshing periodically for up-to-date population figures.
 
-| Country                | Population     | Year |
-|------------------------|----------------|------|
-| India                  | 1,428,627,663   | 2025 |
-| China                  | 1,425,671,352   | 2025 |
-| United States          | 339,996,563     | 2025 |
-| ...                    | ...             | ...  |
+🤝 Contributing
+Feel free to fork, open issues, or suggest improvements via pull requests.
 
----
-
-## 📌 Notes
-
-- Data was sourced from the Wikipedia page:  
-  [List of countries and dependencies by population](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population)
-- Consider validating population figures for long-term use cases with official sources (e.g., UN or World Bank).
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
----
-
-## 📄 License
-
+🪪 License
 This project is licensed under the MIT License.
