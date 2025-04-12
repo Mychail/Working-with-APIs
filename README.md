@@ -34,7 +34,7 @@ This repository contains Python scripts that extract structured data from the [W
 - `pandas`  
 - `requests`  
 - `wikipedia-api` or `BeautifulSoup`  
-- `lxml`  
+- `json`  
 
 ---
 
