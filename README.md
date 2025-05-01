@@ -28,7 +28,7 @@ This repository contains tools and scripts for extracting, analyzing, and visual
 
 ## 📦 Requirements
 
-- Python 3.8+
+- Python 3.12
 - `pandas`
 - `wikipedia-api` or `requests + BeautifulSoup`
 - `jupyter` (for `.ipynb` notebook)
